@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Coffee Shop Website</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#coffee">Coffee Shop</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="shop-item">
+            <img src="https://github.com/pondlnwtrue007/Lab6-cafeBookings/blob/master/img/image1.jpg?raw=true" alt="Shop 1">
+            <div class="shop-details">
+                <h2>คาเฟ่ชิคสตาร์</h2>
+                <p>ร้านคาเฟ่ชิคสตาร์เป็นสถานที่สำหรับคนที่รักกาแฟและสตาร์ความเท่ ที่นี่คุณจะได้พบกับบรรยากาศที่สบายๆ และกาแฟที่มีรสชาติเอาใจคนรัก ไม่ว่าจะเป็นกาแฟดั่งใจ, คาปูชิโน, หรือเครื่องดื่มอื่นๆ ที่ทางร้านเตรียมพร้อมให้บริการ. เรายินดีต้อนรับทุกคนที่ต้องการสัมผัสประสบการณ์คาเฟ่ที่แตกต่างและไม่ซ้ำใคร.</p>
+                <a href="shopitem.html" class="shop-link">Visit Shop</a> <button onclick="addToCart('คาเฟ่ชิคสตาร์')">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="shop-item">
+            <img src="https://github.com/pondlnwtrue007/Lab6-cafeBookings/blob/master/img/image2.jpg?raw=true" alt="Shop 2">
+            <div class="shop-details">
+                <h2>เอสเพรสโซคาเฟ่</h2>
+                <p>ร้านเอสเพรสโซคาเฟ่เป็นสถานที่ที่คุณสามารถหายเหนื่อยจากความวุ่นวายของชีวิตและผ่อนคลายกับรสชาติของกาแฟที่อร่อยและขนมอร่อยที่เราเสนอ. เราเน้นให้บริการที่มีความอบอุ่นและเป็นกันเอง คุณสามารถมาที่นี่เพื่อพักผ่อน, สนุกกับหนังสือ, หรือแบ่งปันช่วงเวลาดีๆ กับเพื่อน.</p>
+                <a href="2.html" class="shop-link">Visit Shop</a><button onclick="addToCart('เอสเพรสโซคาเฟ่')">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="shop-item">
+            <img src="https://github.com/pondlnwtrue007/Lab6-cafeBookings/blob/master/img/image6.jpg?raw=true" alt="Shop 3">
+            <div class="shop-details">
+                <h2>กาแฟแคราฟท์</h2>
+                <p>ร้านกาแฟแคราฟท์เป็นที่สำหรับคนรักกาแฟแบบคราฟท์ ที่นี่เราเสนอกาแฟที่ผลิตด้วยความพิถีพิถันและความใส่ใจในทุกขั้นตอน และเรามีความคิดสร้างสรรค์ในการผสมกาแฟเพื่อให้คุณได้ลิ้มรสชาติที่ไม่เหมือนใคร. ร้านของเราเป็นสถานที่สำหรับคนรักกาแฟและต้องการสัมผัสประสบการณ์คาเฟ่ที่เป็นเอกลักษณ์.</p>
+                <a href="3.html" class="shop-link">Visit Shop</a> <button onclick="addToCart('กาแฟแคราฟท์')">Add to Cart</button>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="cart">
+            <button class="cart-toggle">Toggle Cart</button>
+            <div class="cart-items">
+                <h2>คาเฟ่ชิคสตาร์</h2>
+                <p>ร้านคาเฟ่ชิคสตาร์เป็นสถานที่สำหรับคนที่รักกาแฟและสตาร์ความเท่</p>
+            </div>
+            <div class="cart-items">
+                <h2>เอสเพรสโซคาเฟ่</h2>
+                <p>ร้านเอสเพรสโซคาเฟ่เป็นสถานที่ที่คุณสามารถหายเหนื่อยจากความวุ่นวายของชีวิต</p>
+            </div>
+            <div class="cart-items">
+                <h2>กาแฟแคราฟท์</h2>
+                <p>ร้านกาแฟแคราฟท์เป็นที่สำหรับคนรักกาแฟแบบคราฟท์ ที่นี่เราเสนอกาแฟที่ผลิตด้วยความพิถีพิถัน</p>
+            </div>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

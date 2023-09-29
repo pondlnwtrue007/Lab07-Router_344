@@ -1,0 +1,84 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(auto, auto); /* เพิ่มบรรทัดนี้ */
+    gap: 20px;
+    padding: 20px;
+}
+
+.cart {
+    position: fixed;
+    right: 0; /* กำหนดให้อยู่ทางขวา */
+    top: 50%; /* กำหนดให้อยู่ทางกลางตามแนวดิ่ง */
+    transform: translateY(-50%); /* เลื่อนตามผู้ใช้ */
+    width: 300px; /* กำหนดความกว้างของตะกร้า */
+    height: 100%; /* กำหนดความสูงเท่ากับหน้าจอ */
+    background-color: #f57607; /* สีพื้นหลังของตะกร้า */
+    color: #000; /* เปลี่ยนสีตัวอักษร */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้ตะกร้า */
+    overflow-y: auto; /* ให้มีการเลื่อนเมื่อข้อมูลมากเกินไป */
+    padding: 20px;
+    transform-origin: right center; /* กำหนดจุดเริ่มต้นของการเลื่อน */
+    transition: transform 0.3s ease-in-out; /* เพิ่มอนิเมชันเมื่อแสดง/ซ่อนตะกร้า */
+}
+
+.cart.show {
+    transform: translateX(0); /* เมื่อแสดงตะกร้าให้เลื่อนมาทางขวา */
+}
+.shop-item {
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+.shop-item:hover {
+    transform: scale(1.05);
+}
+
+.shop-item img {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.shop-details {
+    margin-top: 10px;
+}
+
+.shop-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
